@@ -1,0 +1,30 @@
+.site-header{
+  user-select: none;
+  background-color: #fff;
+  border-bottom: 1px solid #d9d9d9;
+  height: 54px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.site-header .inner{
+  max-width: 1270px;
+  margin: 0 auto;
+  font-size: 14px;
+  display: flex;
+  flex-flow: row wrap;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 33%;
+  text-align: center;
+  display: block;
+  position: relative;
+  top:5px;
+}

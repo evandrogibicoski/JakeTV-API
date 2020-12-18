@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+vagrant ssh -- docker exec -t web php /share/artisan.php $@

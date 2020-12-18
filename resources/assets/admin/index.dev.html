@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <title>{{ config('app.name', 'Laravue') }}</title>
+
+        <script>
+            window.Laravel = <?php echo json_encode([
+                'csrfToken' => csrf_token(),
+                'baseUrl' => url(''),
+                'isGuest' => Auth::guard('admin')->guest(),
+            ]); ?>;
+
+            @if (!Auth::guard('admin')->guest())
+                Laravel.user = {!! Auth::guard('admin')->user() !!};
+            @else
+                Laravel.user = {};
+            @endif
+
+            Laravel.errors = {};
+        </script>
+
+        @foreach ($errors->keys() as $key)
+            <script>
+                Laravel.errors['{{ $key }}'] = '{{ $errors->first($key) }}';
+            </script>
+        @endforeach
+
+        <script>
+            Laravel.oldInputs = JSON.parse('{!! json_encode(old()) !!}');
+        </script>
+    </head>
+    <body>
+        <div class="body-content">
+            @yield('content')
+        </div>
+
+        <script type="text/javascript" src="/app.js"></script>
+    </body>
+</html>

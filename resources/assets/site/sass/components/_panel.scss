@@ -1,0 +1,30 @@
+.panel {
+  background-color: $white;
+  border: 1px solid $gray-light;
+  border-radius: 4px;
+
+  @include breakpoint(md) {
+    width: 66.66666%;
+    margin: 0 auto;
+  }
+}
+
+.panel-header {
+  border-bottom: 1px solid $gray-light;
+  padding: 15px;
+}
+
+.panel-heading {
+  color: $gray-dark;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.panel-body {
+  padding: 20px 15px 30px;
+}
+
+.panel-p {
+  margin: 0;
+}

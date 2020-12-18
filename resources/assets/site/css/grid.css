@@ -1,0 +1,26 @@
+.main {
+    background-color: #FCFBFC;
+    width: 100vw;
+
+}
+
+.sidebar {
+    background-color: #152D41;
+    height: 100vh;
+    width: 240px;
+    flex: 0 0 auto!important;
+}
+
+
+
+.flex-grid{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.flex-box{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}

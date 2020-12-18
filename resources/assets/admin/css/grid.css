@@ -1,0 +1,34 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #607d8b;
+    height: 100vh;
+    width: 240px;
+    flex: 0 0 auto!important;
+}
+
+.flex-grid{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.flex-box{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+
+.flex-sub-navigation{
+  width: 270px;
+  height: 100vh;
+  background-color: #f8fafb;
+  border-right: 1px solid #c9d7df;
+  position: relative;
+  flex: 0 auto;
+  padding: 10px 20px;
+}

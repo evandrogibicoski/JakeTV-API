@@ -1,0 +1,102 @@
+.form-row {
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.form-2col,
+.form-columns{
+	display: flex;
+}
+
+.form-group{
+	flex-direction: column;
+	display: flex;
+	margin-right: 10px
+}
+
+label {
+	color:#444;
+  font-size: 13px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="date"],
+input[type="number"] {
+	font-size: 14px;
+	height: 34px;
+	border-radius: 0;
+	color: #333;
+	padding:5px 5px;
+	display: block;
+	border: 0 none;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	outline: none;
+	box-shadow: none;
+}
+textarea {
+	border:none;
+	font-size: 14px;
+	border-radius: 4px;
+	color: #333;
+	padding:5px 12px;
+	display: block;
+	border: 1px solid #ddd;
+	width: 100%;
+	outline: none;
+	box-shadow: none;
+}
+select {
+	display: block;
+	font-size: 14px;
+	height:34px;
+	border:1px solid #ddd;
+	width:100%;
+	background: white;
+}
+
+select.big-input,
+input[type="text"].big-input,
+input[type="password"].big-input,
+input[type="email"].big-input,
+input[type="date"].big-input,
+input[type="number"].big-input {
+	height: 42px;
+	font-size: 18px;
+}
+
+input[type="text"].input-with-icon,
+input[type="password"].input-with-icon,
+input[type="email"].input-with-icon,
+input[type="date"].input-with-icon,
+input[type="number"].input-with-icon {
+	padding-left: 30px;
+}
+.icon-input {
+	position: absolute;
+	top:30px;
+	left:10px;
+}
+.icon-input--no-label {
+	top:10px;
+}
+
+
+.add-more {
+	display: block;
+	font-size: 12px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.alert {
+	padding:10px;
+	color:white;
+	text-align: center;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	font-size: .8em;
+}
+.alert.error {background:#fd5858;}
+.alert.success {background:#43c35e;}
